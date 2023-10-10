@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #121111;
+}
+.wrapper{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.wrapper .icon{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.wrapper .icon p{
+    height: 40px;
+    position: absolute;
+    width: 2px;
+    top: -30px;
+    z-index: -1;
+    border-radius: 50px;
+    background: red;
+}
+.wrapper .icon i{
+    font-size: 2em;
+}
+.wrapper .icon span{
+    position: absolute;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    width: 74px;
+    border-radius: 7px;
+    background: white;
+}
+.wrapper .icon:hover.facebook{
+    background: blue;
+}
+.wrapper .icon:hover.twitter{
+    background: skyblue;
+}
+.wrapper .icon:hover.instagram{
+    background: orangered;
+}
+.wrapper .icon:hover.github{
+    background: blueviolet;
+}
+
+
+
+/* .wrapper .icon:hover.facebook i{
+    color: red;
+}
+.wrapper .icon:hover.twitter i{
+    color: rgb(85, 0, 255);
+}
+.wrapper .icon:hover.github i{
+    color: rgb(0, 255, 60);
+} */
+.wrapper .icon:hover.github i{
+    color: rgb(255, 0, 230);
+}
