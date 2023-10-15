@@ -5,31 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Younger Coding</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
-    <ul class="wrapper">
-        <li class="icon facebook">
-            <i class='bx bxl-facebook'></i>
-            <p></p>
-            <span>Facebook</span>
-        </li>
-        <li class="icon twitter">
-            <i class='bx bxl-twitter'></i>
-            <p></p>
-            <span>Twitter</span>
-        </li>
-        <li class="icon instagram">
-            <i class='bx bxl-instagram'></i>
-            <p></p>
-            <span>Instagram</span>
-        </li>
-        <li class="icon github">
-            <i class='bx bxl-github' ></i>
-            <p></p>
-            <span>Github</span>
-        </li>
-    </ul>
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector(".cursor");
+
+        document.addEventListener('mousemove',(e)=>{
+            let x = e.pageX;
+            let y = e.pageY;
+
+            cursor.style.top= y +"px";
+            cursor.style.left= x  +"px";
+        })
+    </script>
 </body>
 </html>
